@@ -1,0 +1,70 @@
+html {
+  font-size: 28px;
+}
+body {
+  background: teal;
+  color: #fff;
+  padding: 25px;
+  //fonts found on google fonts and stylesheet pasted into html head
+  font-family: 'Dongle', 'Arial', sans-serif;
+}
+.container {
+  display: inline-flex;
+  width: 100%
+  height: auto
+  
+  
+}
+
+/* this inserts a background image to a given element
+background-image: url('https://content.codecademy.com/courses/freelance-1/unit-5/tsunami-coffee/images/bg-photo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  */
+img {
+  //setting height to auto will retain initial aspect ratio
+  height: auto;
+  width: 250px;
+  flex-grow: 1;
+  
+  //inline-block causes elements to act as blocks but can stay on same line
+  
+}
+
+/* this would cause image to disappear on screen smaller than 700px
+@media only screen and (max-width: 700px) {
+  .supporting img {
+    display: none;
+  }
+}
+can also select for resolution with min-resolution/max-resolution, or
+for orientation: landscape || portrait
+*/
+#header {
+  width: 100%;
+  background-image: url('https://skillwave.training/wp-content/uploads/2019/10/Academy-Background-1920x1080.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  text-shadow: 3px 3px 3px black;
+  flex-grow: 2;
+  
+  align-items: center;
+  border-radius: 30px;
+  //border-radius adds rounded corners
+  color: whitesmoke;
+}
+#introduction {
+  //center aligns text to center of element, not necessarily page
+  text-align: center;
+  
+}
+
+#about h3 {
+  width: 100%;
+  text-align: center;
+  //rem sizing is relative to the size set in the initial html declaration
+  font-size: 0.8rem;
+}
